@@ -1,50 +1,45 @@
-// Simple site configuration (edit these values)
 window.SITE = {
-  name: "Nithin Krishna",
-  title: "Nithin Krishna · Portfolio",
-  email: "nkrishna6238@gmail.com",
-  location: "London, Ontario",
-  socials: {
-    github: "https://github.com/YOUR_GITHUB",
-    linkedin: "https://linkedin.com/in/YOUR_LINKEDIN"
-  },
-  skills: [
-    { name: "JavaScript / TypeScript", level: "Advanced" },
-    { name: "React / Next.js", level: "Advanced" },
-    { name: ".NET C# / ASP.NET", level: "Intermediate" },
-    { name: "SQL (Postgres / MS SQL)", level: "Intermediate" },
-    { name: "Kotlin / Android", level: "Intermediate" },
-    { name: "Swift / iOS (UIKit, SwiftUI)", level: "Intermediate" },
-    { name: "Firebase / Firestore", level: "Intermediate" },
-    { name: "CI/CD (GitHub Actions)", level: "Intermediate" },
-    { name: "UX / Accessibility", level: "Strong working" }
-  ],
-  experience: [
+  skillsCategories: [
     {
-      where: "A&W Canada",
-      role: "Team Member",
-      when: "Jan 2025 — Present",
-      what: [
-        "Delivered fast, friendly service and maintained high standards.",
-        "Handled cash and digital payments accurately."
+      icon: "fa-solid fa-chart-line",
+      title: "Programming Language",
+      years: "More than 3 years",
+      items: [
+        { name: "JavaScript / TypeScript", level: 90 },
+        { name: "C#", level: 85 },
+        { name: "Kotlin", level: 70 },
+        { name: "Swift", level: 65 }
       ]
     },
     {
-      where: "The Juice Barrel",
-      role: "Barista / Attendant",
-      when: "Feb 2023 — Mar 2024",
-      what: [
-        "Prepared beverages and managed POS in a fast-paced setting.",
-        "Upheld cleanliness and customer satisfaction."
+      icon: "fa-solid fa-code",
+      title: "Web Developer",
+      years: "More than 3 years",
+      items: [
+        { name: "React / Next.js", level: 90 },
+        { name: ".NET C# / ASP.NET", level: 85 },
+        { name: "SQL", level: 80 },
+        { name: "UX / Accessibility", level: 75 }
       ]
     },
     {
-      where: "Personal Projects",
-      role: "Software Developer",
-      when: "Ongoing",
-      what: [
-        "Built web/mobile apps with React, .NET, Kotlin, and Swift.",
-        "Focused on performance, accessibility, and clean UI."
+      icon: "fa-solid fa-mobile-screen",
+      title: "Mobile Application Developer",
+      years: "More than 8 months",
+      items: [
+        { name: "Kotlin / Android", level: 70 },
+        { name: "Swift / iOS (UIKit, SwiftUI)", level: 65 },
+        { name: "Firebase / Firestore", level: 60 }
+      ]
+    },
+    {
+      icon: "fa-solid fa-laptop-code",
+      title: "Other Technologies & Tools",
+      years: "",
+      items: [
+        { name: "CI/CD (GitHub Actions)", level: 75 },
+        { name: "PostgreSQL", level: 80 },
+        { name: "MS SQL Server", level: 85 }
       ]
     }
   ]

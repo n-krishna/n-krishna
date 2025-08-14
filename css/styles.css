@@ -257,6 +257,75 @@ a:hover{
 .stat .label{
   color:var(--muted);
 }
+.skills-title {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 36px);
+  margin-bottom: 4px;
+}
+.skills-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: var(--space-lg);
+}
+
+.skills-container {
+  display: grid;
+  gap: 16px;
+}
+
+.skill-category {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.skill-category:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.skill-header i {
+  font-size: 20px;
+  color: var(--brand);
+}
+.skill-header strong {
+  display: block;
+}
+.skill-header span {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.skill-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 8px;
+}
+.skill-content.open {
+  max-height: 500px;
+}
+
+.skill-content ul {
+  margin: 0;
+  padding-left: 24px;
+  list-style: disc;
+}
+.skill-content li {
+  color: var(--text);
+  font-size: 14px;
+}
 
 .skill-grid{
   display:grid;

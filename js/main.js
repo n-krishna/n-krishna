@@ -29,16 +29,18 @@
 
   // Populate skills
   const skillGrid = $("#skillGrid");
-  SITE.skills.forEach(s => {
-    const li = document.createElement("li");
-    li.className = "reveal";
-    li.innerHTML = `<strong>${s.name}</strong><span class="level">${s.level}</span>`;
-    skillGrid.appendChild(li);
+  SITE.skillsCategories.forEach(cat => {
+    cat.items.forEach(s => {
+      const li = document.createElement("li");
+      li.className = "reveal";
+      li.innerHTML = `<strong>${s.name}</strong><span class="level">${s.level}</span>`;
+      skillGrid.appendChild(li);
+    });
   });
 
   // Populate experience
   const timeline = $("#timeline");
-  SITE.experience.forEach(exp => {
+  SITE.experience?.forEach(exp => {
     const li = document.createElement("li");
     li.className = "reveal";
     li.innerHTML = `
@@ -53,7 +55,7 @@
   const projectGrid = $("#projectGrid");
   const renderProjects = (filter = "all") => {
     projectGrid.innerHTML = "";
-    PROJECTS.filter(p => filter === "all" || p.tags.includes(filter)).forEach(p => {
+    PROJECTS?.filter(p => filter === "all" || p.tags.includes(filter)).forEach(p => {
       const card = document.createElement("article");
       card.className = "card reveal";
       card.innerHTML = `

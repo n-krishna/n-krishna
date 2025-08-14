@@ -13,13 +13,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Skip link -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / Nav -->
+  <!-- Header -->
   <header class="site-header" id="header" aria-label="Site header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Home">NK</a>
@@ -41,7 +43,6 @@
     <!-- Hero -->
     <section id="home" class="section hero">
       <div class="container hero-inner">
-        <!-- Left side: text -->
         <div class="hero-copy">
           <p class="eyebrow">Hello, I’m</p>
           <h1 class="headline">Nithin Krishna</h1>
@@ -56,8 +57,6 @@
             <li><a href="mailto:nkrishna6238@gmail.com" aria-label="Email">Email</a></li>
           </ul>
         </div>
-
-        <!-- Right side: image -->
         <div class="hero-media">
           <img src="assets/nithin.jpg" alt="Portrait of Nithin Krishna" width="420" height="420" loading="eager" decoding="async" />
         </div>
@@ -87,10 +86,11 @@
     <!-- Skills -->
     <section id="skills" class="section alt">
       <div class="container">
-        <h2>Skills</h2>
-        <ul class="skill-grid" id="skillGrid">
-          <!-- Populated from config.js -->
-        </ul>
+        <h2 class="skills-title">Skills</h2>
+        <p class="skills-subtitle">My technical level</p>
+        <div class="skills-container" id="skillsContainer">
+          <!-- Filled by config.js -->
+        </div>
       </div>
     </section>
 
@@ -105,9 +105,7 @@
             <button class="chip" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
           </div>
         </div>
-        <div class="project-grid" id="projectGrid" aria-live="polite">
-          <!-- Populated from projects.js -->
-        </div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
       </div>
     </section>
 
@@ -115,9 +113,7 @@
     <section id="experience" class="section alt">
       <div class="container">
         <h2>Experience</h2>
-        <ol class="timeline" id="timeline">
-          <!-- Populated from config.js -->
-        </ol>
+        <ol class="timeline" id="timeline"></ol>
       </div>
     </section>
 
