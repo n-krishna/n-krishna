@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nithin Krishna · Portfolio</title>
+  <meta name="description" content="Portfolio of Nithin Krishna — Developer and designer." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="header" aria-label="Site header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">NK</a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <!-- Left side: text -->
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1 class="headline">Nithin Krishna</h1>
+          <p class="subhead">Mobile & Web Developer crafting fast, accessible apps with delightful UX.</p>
+          <div class="cta">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+          <ul class="social">
+            <li><a rel="me" href="https://github.com/n-krishna" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/nithin-krishna-142aa9212/" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="mailto:nkrishna6238@gmail.com" aria-label="Email">Email</a></li>
+          </ul>
+        </div>
+
+        <!-- Right side: image -->
+        <div class="hero-media">
+          <img src="assets/nithin.jpg" alt="Portrait of Nithin Krishna" width="420" height="420" loading="eager" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="about-copy">
+          <h2>About Me</h2>
+          <p>
+            I'm a committed developer driven by a passion for crafting efficient solutions.
+            My goal is to create top-notch, user-friendly software that fulfills both client and end-user needs.
+            Let's collaborate to bring your next project to life.
+          </p>
+          <ul class="quickfacts">
+            <li><strong>Location:</strong> London, ON</li>
+            <li><strong>Education:</strong> Mobile Application Development · Graduated 2025</li>
+            <li><strong>Open to:</strong> Full-time · Contract · Freelance</li>
+          </ul>
+          <a href="#projects" class="btn primary" style="margin-top:16px;">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-grid" id="skillGrid">
+          <!-- Populated from config.js -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
+            <button class="chip" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+          </div>
+        </div>
+        <div class="project-grid" id="projectGrid" aria-live="polite">
+          <!-- Populated from projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <ol class="timeline" id="timeline">
+          <!-- Populated from config.js -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p>Want to collaborate or have a role in mind? Let’s chat.</p>
+          <ul class="contact-cards">
+            <li><a href="mailto:nkrishna6238@gmail.com">nkrishna6238@gmail.com</a></li>
+            <li><a href="https://linkedin.com/in/nithin-krishna-142aa9212">linkedin.com/in/nithin-krishna-142aa9212</a></li>
+            <li><a href="https://github.com/n-krishna">github.com/n-krishna</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <label> Name
+            <input name="name" required />
+          </label>
+          <label> Email
+            <input name="email" type="email" required />
+          </label>
+          <label> Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Nithin Krishna · Built with vanilla HTML/CSS/JS · <a href="#" id="backToTop">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
